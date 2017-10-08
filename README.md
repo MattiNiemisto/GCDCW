@@ -7,22 +7,22 @@
 
 ## Usage instructions
 - Open R Studio and set working directory to where you have the R-file and run following commands
-> source("run_analysis.R) ## This will source the script
-> runInit() ## this will include dplyr library
-> getData("./data","https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip") ## This will create a directory called data (if it doesn't exist in parent directory and load the data used in this assginment)
-> analyze <- runAnalysis() ## this will load the data set in R and complete following steps
+* > source("run_analysis.R) ## This will source the script
+* > runInit() ## this will include dplyr library
+* > getData("./data","https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip") ## This will create a directory called data (if it doesn't exist in parent directory and load the data used in this assginment)
+* > analyze <- runAnalysis() ## this will load the data set in R and complete following steps
 
-1.Merges the training and the test sets to create one data set.
-2.Extracts only the measurements on the mean and standard deviation for each measurement.
-3.Uses descriptive activity names to name the activities in the data set
-4.Appropriately labels the data set with descriptive variable names.
-5.From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+1. Merges the training and the test sets to create one data set.
+2. Extracts only the measurements on the mean and standard deviation for each measurement.
+3. Uses descriptive activity names to name the activities in the data set
+4. Appropriately labels the data set with descriptive variable names.
+5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 You can see the results for step 5 by running
-> View(analyze$means)
+* > View(analyze$means)
 
 The dataframe for step 4 can be viewed by running
-> View(analy$meanstd)
+* > View(analy$meanstd)
 
 The variables and dataframes are described in CodeBook.md along with steps performed to get the the end results.
 
